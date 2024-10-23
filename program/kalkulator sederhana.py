@@ -1,43 +1,22 @@
-def pertambahan(x, y):
-    return x + y
-
-def pengurangan(x, y):
-    return x - y
-
-def perkalian(x, y):
-    return x * y
-
-def pembagian(x, y):
-    if y == 0:
-        raise ValueError("Cannot divide by zero!")
-    return x / y
-
+print("kalkulator sederhana\n")
 def kalkulator ():
+    
     print("1. penjumlahan")
     print("2. pengurangan")
     print("3. perkalian")
     print("4. pembagian")
     
-    choice = int(input("masukkan pilihan: "))
+    pilih = int(input("masukkan pilihan : "))
     
-    if choice in (1, 2, 3, 4):
-        num1 = float(input("masukan bilangan pertama: "))
-        num2 = float(input("masukan bilangan kedua: "))
+    if pilih in (1, 2, 3, 4):
+        b1 = float(input("masukan bilangan pertama: "))
+        b2 = float(input("masukan bilangan kedua: "))
 
-    if choice == 1:
-            print(num1, "+", num2, "=", pertambahan(num1, num2))
-            
-    elif choice == 2:
-            print(num1, "-", num2, "=", pengurangan(num1, num2))
-            
-    elif choice == 3:
-            print(num1, "*", num2, "=", perkalian(num1, num2))
-            
-    elif choice == 4:
-            print(num1, "/", num2, "=", pembagian(num1, num2))
-
-    else:
-        return("tidak ada pilihan itu") 
+    if pilih == 1: print(b1, "+", b2, "=", b1 + b2)      
+    elif pilih == 2: print(b1, "-", b2, "=", b1 - b2)       
+    elif pilih == 3: print(b1, "*", b2, "=", b1 * b2)        
+    elif pilih == 4: print(b1, "/", b2, "=", b1 / b2)
+    else: print("tidak ada pilihan itu") 
     
 kalkulator()
     
