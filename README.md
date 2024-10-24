@@ -1,3 +1,3 @@
 # labpy02
 
-![](<Blank diagram.png>)
+[Flowchart untuk menentukan harga tiket bioskop](gambar/lowbiso.png)
