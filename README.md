@@ -1,3 +1,3 @@
 # labpy02
 
-<Blank diagram.png>
+![](<Blank diagram.png>)
