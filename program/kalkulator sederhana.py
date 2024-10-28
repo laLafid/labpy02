@@ -1,9 +1,7 @@
-print("kalkulator sederhana\n")
-
-    
-print("1. penjumlahan\n2. pengurangan\n3. perkalian\n4. pembagian\n5. pangkat\n6. keluar")
-
 while True:
+    print("kalkulator sederhana\n")
+    print("menu pilihan : ")
+    print("1. penjumlahan\n2. pengurangan\n3. perkalian\n4. pembagian\n5. pangkat\n6. keluar\n")
     pilih = input("masukkan pilihan : ")
     
     if pilih == '1' or pilih == 'penjumlahan': 
@@ -31,7 +29,7 @@ while True:
         print(b1, "**", b2, "=", b1 ** b2)
     elif pilih == '6' or pilih == 'keluar':
         print("terimakasih") 
-        break
+        break 
     else: print("tidak ada pilihan itu") 
       
 
