@@ -1,22 +1,41 @@
 print("kalkulator sederhana\n")
-def kalkulator ():
+
     
-    print("1. penjumlahan")
-    print("2. pengurangan")
-    print("3. perkalian")
-    print("4. pembagian")
+print("1. penjumlahan\n2. pengurangan\n3. perkalian\n4. pembagian\n5. pangkat\n6. keluar")
+
+while True:
+    pilih = input("masukkan pilihan : ")
     
-    pilih = int(input("masukkan pilihan : "))
-    
-    if pilih in (1, 2, 3, 4):
+    if pilih == '1' or pilih == 'penjumlahan': 
+        b1 = float(input("masukan bilangan pertama: "))
+        b2 = float(input("masukan bilangan kedua: ")) 
+        print(b1, "+", b2, "=", b1 + b2)        
+    elif pilih == '2' or pilih == 'pengurangan': 
+        b1 = float(input("masukan bilangan pertama: "))
+        b2 = float(input("masukan bilangan kedua: ")) 
+        print(b1, "-", b2, "=", b1 - b2)    
+    elif pilih == '3' or pilih == 'perkalian': 
         b1 = float(input("masukan bilangan pertama: "))
         b2 = float(input("masukan bilangan kedua: "))
-
-    if pilih == 1: print(b1, "+", b2, "=", b1 + b2)      
-    elif pilih == 2: print(b1, "-", b2, "=", b1 - b2)       
-    elif pilih == 3: print(b1, "*", b2, "=", b1 * b2)        
-    elif pilih == 4: print(b1, "/", b2, "=", b1 / b2)
+        print(b1, "*", b2, "=", b1 * b2)         
+    elif pilih == '4' or pilih == 'pembagian': 
+        b1 = float(input("masukan bilangan pertama: "))
+        b2 = float(input("masukan bilangan kedua: "))
+        if b2 != 0:
+            print(b1, "/", b2, "=", b1 / b2)
+        else:
+            print("Error: Pembagian dengan nol tidak diperbolehkan!")
+    elif pilih == '5' or pilih == 'pangkat': 
+        b1 = float(input("masukan bilangan pertama: "))
+        b2 = float(input("masukan bilangan kedua: "))
+        print(b1, "**", b2, "=", b1 ** b2)
+    elif pilih == '6' or pilih == 'keluar':
+        print("terimakasih") 
+        break
     else: print("tidak ada pilihan itu") 
+      
+
+   
+
     
-kalkulator()
     
