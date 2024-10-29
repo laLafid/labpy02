@@ -3,10 +3,12 @@
 
 # Program Pemesanan Tiket Bioskop
 
-Flowchart untuk program ini
+
+## Flowchart untuk program ini
 
 ![alt text](<gambar/flowchart tiket bioskop.png>)
 
+## Penjelasan Kode
 1. Menyapa pengguna:
 ```ruby
 print("Selamat Datang di bioskop")
@@ -56,5 +58,48 @@ total = harga * diskon
 print(f"\nHalo {nama}, \nTotal yang harus anda bayar adalah: Rp {total}\n")
 ```
 
+# Program Kalkulator Sederhana
+
+## Flowchart 
 
 ![alt text](<gambar/flowchart kalkulator sederhana.jpeg>)
+
+## Penjelasan Kode
+
+1. Looping:
+```ruby
+while True:
+    print("Kalkulator Sederhana\n1. penjumlahan\n2. pengurangan\n3. perkalian\n4. pembagian")
+    pilih = input("masukkan pilihan : ").lower()
+    if pilih in ['1', 'penjumlahan', '2', 'pengurangan', '3', 'perkalian', '4', 'pembagian']:
+        break
+    else:
+        print("tidak ada pilihan itu, silakan pilih lagi")
+```
+Tujuannya agar Program terus menampilkan opsi kalkulator (penjumlahan, pengurangan, perkalian, dan pembagian) hingga pengguna memasukkan pilihan yang valid.
+
+2. Meminta input bilangan:
+```ruby
+A = float(input("masukan bilangan pertama: "))
+B = float(input("masukan bilangan kedua: "))
+```
+
+3. Melakukan operasi aritmatika:
+```ruby
+if pilih in ['1', 'penjumlahan']:
+    print("Hasil dari Penjumlahan:", A, "+", B, "=", A + B)
+elif pilih in ['2', 'pengurangan']:
+    print("Hasil dari Pengurangan:", A, "-", B, "=", A - B)
+elif pilih in ['3', 'perkalian']:
+    print("Hasil dari Perkalian:", A, "*", B, "=", A * B)
+elif pilih in ['4', 'pembagian']:
+    if B != 0:
+        print("Hasil dari Pembagian:", A, "/", B, "=", A / B)
+    else:
+        print("Error: Tidak bisa membagi dengan nol!")
+else:
+    print("tidak ada pilihan itu")
+```
+### Hasil Kode
+
+
