@@ -57,6 +57,9 @@ total = harga * diskon
 ```ruby
 print(f"\nHalo {nama}, \nTotal yang harus anda bayar adalah: Rp {total}\n")
 ```
+### Hasil Kode
+
+![alt text](<gambar/hasil tiket .png>)
 
 # Program Kalkulator Sederhana
 
@@ -102,4 +105,4 @@ else:
 ```
 ### Hasil Kode
 
-
+![alt text](<gambar/hasil kalkulator.png>)
